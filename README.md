@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-1. [Challenge 1](#)
+1. [Challenge 1: Array Shift](./Data-Structures/arrayShift)
 
 2. [Challenge 2](#)
 
