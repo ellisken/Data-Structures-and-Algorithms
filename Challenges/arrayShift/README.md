@@ -8,5 +8,5 @@ Time Complexity = O(n): We must copy n elements to the new array (where n is the
 Space Compexity = O(n): We must create a new array of size n+1
 
 ## Solution
-![whiteboard-image](../../assets/array_shift1.jpg)
-![whiteboard-image2](../../assets/array_shift2.jpg)
+![whiteboard-image](../../assets/array_shift2.jpg)
+![whiteboard-image2](../../assets/array_shift1.jpg)
