@@ -7,9 +7,30 @@ namespace arrayShift
         static void Main(string[] args)
         {
             //Declare some test arrays
-            int[] arr1 = { 3, 1, -2, 94 }, arr2 = { 4, 5, 6 }, arr3 = { 1 }, arr4 = { };
-     
-            
+            int[][] testArrays =
+            {
+                new int[] { 3, 1, -2, 94 }, //even number of elements
+                new int[] { 4, 5, 6 }, //odd number of elements
+                new int[] { 1 }, //one element
+                new int[] { } //empty array
+            };
+
+            //Show initial arrays
+            Console.WriteLine("This program tests insertion into the following arrays:");
+            foreach (int[] array in testArrays)
+            {
+                Console.WriteLine($"[{string.Join(",", array)}]");
+            }
+
+            Console.WriteLine();
+
+            //Test insertion of the number 99 into each arr
+            //and print the resulting arrays to the console
+            Console.WriteLine("After inserting 99 into each array:");
+            foreach (int[] array in testArrays)
+            {
+                Console.WriteLine($"[{string.Join(",", ArrayShift(array, 99))}]");
+            }
         }
 
 
