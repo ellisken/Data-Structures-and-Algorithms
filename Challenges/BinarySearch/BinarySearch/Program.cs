@@ -10,6 +10,12 @@ namespace BinarySearch
             Console.WriteLine("{0}", BinarySearch(testArray, 5));
         }
 
+        /// <summary>
+        /// Performs binary search of an array of ints
+        /// </summary>
+        /// <param name="array">Sorted array of ints (ascending)</param>
+        /// <param name="target">Target int</param>
+        /// <returns>The index of the target int (if found), else -1.</returns>
         public static int BinarySearch(int[] array, int target)
         {
             //Set start and end indices
