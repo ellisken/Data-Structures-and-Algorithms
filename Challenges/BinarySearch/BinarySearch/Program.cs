@@ -19,7 +19,7 @@ namespace BinarySearch
             while(start <= end)
             {
                 //Set middle index
-                int middle = Convert.ToInt32(Math.Floor((start + end) / 2.0));
+                int middle = (start + end) / 2;
                 //If target found, return index
                 if (array[middle] == target) return middle;
                 //If target < middle value, search lower half of array
