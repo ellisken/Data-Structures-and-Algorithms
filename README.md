@@ -4,7 +4,7 @@
 
 1. [Challenge 1: Array Shift](Challenges/arrayShift)
 
-2. [Challenge 2](#)
+2. [Challenge 2: Binary Search](Challenges/BinarySearch)
 
 3. [Challenge 3](#)
 
