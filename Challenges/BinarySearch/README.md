@@ -7,7 +7,7 @@ Otherwise, the function should return -1;
 
 ## Approach & Efficiency
 * Time Complexity = O(logn): The total search space halves each iteration.
-* Space Compexity = O(1) 
+* Space Compexity = O(1): No significant space is used
 
 ## Solution
 ![whiteboard-image](../../assets/array_binary_search_1.jpg)
