@@ -23,9 +23,9 @@ namespace LinkedList.Classes
         }
 
         /// <summary>
-        /// Adds a node at the beginning of the LL, O(1)
+        /// Inserts a node at the beginning of the LL, O(1)
         /// </summary>
-        /// <param name="node"></param>
+        /// <param name="node">Node to be added</param>
         public void Insert(Node node)
         {
             node.Next = Head;
@@ -33,22 +33,54 @@ namespace LinkedList.Classes
             Current = Head;
         }
 
-        public bool Includes(int value)
-        {
-            Current = Head;
-            while(Current != null)
-            {
-                if (Current.Value == value) return true;
-            }
-            return false;
-        }
+        /// <summary>
+        /// Determines if a value is in the LL
+        /// </summary>
+        /// <param name="value">Target value</param>
+        /// <returns>True if in the LL, else false</returns>
+      
 
+        /// <summary>
+        /// Prints out all values in the linked list
+        /// </summary>
         public void Print()
         {
             Current = Head;
             while(Current != null)
             {
                 Console.WriteLine($"{Current.Value}-->");
+                Current = Current.Next;
+            }
+        }
+
+        /// <summary>
+        /// Adds a node to the end of the LL. O(n).
+        /// </summary>
+        /// <param name="node">Node to be appended</param>
+        public void Append(Node node)
+        {
+            Current = Head;
+            while(Current.Next != null)
+            {
+                Current = Current.Next;
+            }
+            Current.Next = node;
+        }
+
+        public void AddBefore(Node newNode, Node existingNode)
+        {
+            Current = Head;
+            if(Current.Value == existingNode.Value)
+            {
+                Insert(newNode);
+            }
+            while(Current.Next != null)
+            {
+                if(Current.Value == existingNode.Value)
+                {
+                    newNode.Next = Current.Next;
+                    Current.Next = newNode;
+                }
                 Current = Current.Next;
             }
         }
