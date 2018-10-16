@@ -29,7 +29,6 @@ namespace TestLL
             LList testLL = new LList(new Node(6));
             Node newNode = new Node(value);
             testLL.Append(newNode);
-            //Node secondToLastNode = testLL.Find(6);
             //Test that last node's value is equal to the just-appended node's value
             Assert.Equal(testLL.Head.Next.Value, value);
         }

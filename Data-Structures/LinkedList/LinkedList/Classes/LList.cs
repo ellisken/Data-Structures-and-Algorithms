@@ -102,22 +102,6 @@ namespace LinkedList.Classes
                 }
                 Current = Current.Next;
             }
-
-        }
-
-        /// <summary>
-        /// Returns a reference to the node in the list with the specified value
-        /// </summary>
-        /// <param name="targetValue">Value to be searched for</param>
-        /// <returns>Reference to node with that value, else null</returns>
-        public Node Find(int targetValue)
-        {
-            Current = Head;
-            while(Current != null)
-            {
-                if (Current.Value == targetValue) return Current;
-            }
-            return null;
         }
     }
 }
