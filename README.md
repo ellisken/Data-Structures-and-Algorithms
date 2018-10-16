@@ -6,9 +6,7 @@
 
 2. [Challenge 2: Binary Search](Challenges/BinarySearch)
 
-3. [Challenge 3](#)
-
-4. [Implementation: Linked List](#)
+4. [Implementation: Linked List](Data-Structures/LinkedList)
 
 5. [Challenge 5](#)
 
