@@ -4,12 +4,13 @@ using System.Text;
 
 namespace LinkedList.Classes
 {
-    class Node
+    public class Node
     {
         public int Value { get; set; }
         public Node Next { get; set; }
 
-        public Node(int value, Node next)
+        public Node() { }
+        public Node(int value)
         {
             Value = value;
         }
