@@ -34,6 +34,12 @@ namespace LLKthFromEnd
             }
         }
 
+        /// <summary>
+        /// Returns kth from end of the linked list, else returns an exception
+        /// </summary>
+        /// <param name="ll">the linked list</param>
+        /// <param name="k">kth node from end</param>
+        /// <returns>value of kth node from end, else exception</returns>
         public static int GetKthFromEndLL(LList ll, int k)
         {
             try
