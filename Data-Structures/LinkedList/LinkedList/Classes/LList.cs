@@ -104,6 +104,11 @@ namespace LinkedList.Classes
             }
         }
 
+        /// <summary>
+        /// Returns the kth value from the end
+        /// </summary>
+        /// <param name="k">Represents kth value from end</param>
+        /// <returns>Value of kth node from the end, else returns an exception</returns>
         public int KthFromEnd(int k)
         {
             int length = 0;
