@@ -103,5 +103,34 @@ namespace LinkedList.Classes
                 Current = Current.Next;
             }
         }
+
+        /// <summary>
+        /// Returns the kth value from the end
+        /// </summary>
+        /// <param name="k">Represents kth value from end</param>
+        /// <returns>Value of kth node from the end, else returns an exception</returns>
+        public int KthFromEnd(int k)
+        {
+            int length = 0;
+            Current = Head;
+            
+            while(Current != null)
+            {
+                length++;
+                Current = Current.Next;
+            }
+
+            if(k > length - 1)
+            {
+                throw new Exception("Out of range");
+            }
+
+            Current = Head;
+            for(int i=0; i < length - k - 1; i++)
+            {
+                Current = Current.Next;
+            }
+            return Current.Value;
+        }
     }
 }
