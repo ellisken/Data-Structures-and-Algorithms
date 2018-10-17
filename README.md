@@ -8,6 +8,6 @@
 
 4. [Implementation: Linked List](Data-Structures/LinkedList)
 
-5. [Challenge 5](#)
+5. [Challenge 5: Kth from End Linked List](Challenges/LLKthFromEnd)
 
 6. [Challenge 6](#)# Data-Structures-and-Algorithms
