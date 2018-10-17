@@ -4,7 +4,7 @@ using System;
 
 namespace LLKthFromEnd
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -34,7 +34,7 @@ namespace LLKthFromEnd
             }
         }
 
-        static int GetKthFromEndLL(LList ll, int k)
+        public static int GetKthFromEndLL(LList ll, int k)
         {
             try
             {
