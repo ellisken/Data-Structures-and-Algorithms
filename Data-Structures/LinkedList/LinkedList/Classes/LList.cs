@@ -103,5 +103,29 @@ namespace LinkedList.Classes
                 Current = Current.Next;
             }
         }
+
+        public int KthFromEnd(int k)
+        {
+            int length = 0;
+            Current = Head;
+            
+            while(Current != null)
+            {
+                length++;
+                Current = Current.Next;
+            }
+
+            if(k > length - 1)
+            {
+                throw new Exception("Out of range");
+            }
+
+            Current = Head;
+            for(int i=0; i < length - k - 1; i++)
+            {
+                Current = Current.Next;
+            }
+            return Current.Value;
+        }
     }
 }
