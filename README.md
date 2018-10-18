@@ -10,4 +10,4 @@
 
 5. [Challenge 5: Kth from End Linked List](Challenges/LLKthFromEnd)
 
-6. [Challenge 6](#)# Data-Structures-and-Algorithms
+6. [Challenge 6: Linked List Merge](Challenges/LLMerge)
