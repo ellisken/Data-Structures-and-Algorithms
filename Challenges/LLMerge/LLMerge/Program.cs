@@ -7,7 +7,26 @@ namespace LLMerge
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Demonstration of zipper merge for two linked lists:\n\n");
+            
+            //Create new linked list
+            LList ll1 = new LList(new Node(1));
+            LList ll2 = new LList(new Node(5));
+            ll1.Append(new Node(3));
+            ll1.Append(new Node(2));
+            ll2.Append(new Node(9));
+            ll2.Append(new Node(4));
+
+
+            //Show values
+            Console.WriteLine("The first linked list has the following values: ");
+            ll1.Print();
+            Console.WriteLine("\n\nThe second linked list has the following values: ");
+            ll2.Print();
+
+            LList llMerged = Merge(ll1, ll2);
+            Console.WriteLine("\n\nThe merged linked list: ");
+            llMerged.Print();
         }
 
 
@@ -46,7 +65,7 @@ namespace LLMerge
                 }
             }
             //Create a new linked list where the head is set as the first
-            //node in the merged lists with a value
+            //node in the merged list that has a value (i.e., skip dummy newListHead node)
             LList newList = new LList(newListHead.Next);
             return newList;
         }
