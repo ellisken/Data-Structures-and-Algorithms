@@ -18,12 +18,18 @@ namespace LinkedListReverse
 
             LinkedListReverse(myList);
 
-            Console.WriteLine("List after reversal:");
+            Console.WriteLine("List after less-efficient reversal:");
             myList.Print();
+            LinkedListReverseInPlace(myList);
 
+            Console.WriteLine("List after efficient reversal:");
+            myList.Print();
         }
 
-
+        /// <summary>
+        /// Reverses a linked list with space O(n)
+        /// </summary>
+        /// <param name="list">Linked list to reverse</param>
         public static void LinkedListReverse(LList list)
         {
             //Create stack to store values
@@ -46,16 +52,18 @@ namespace LinkedListReverse
                 list.Current.Value = val;
                 list.Current = list.Current.Next;
             }
-
         }
 
-
-        public static void LinkedListReverseMoreEfficiently(LList list)
+        /// <summary>
+        /// Reverses a linked list with space O(1)
+        /// </summary>
+        /// <param name="list">Linked list to reverse</param>
+        public static void LinkedListReverseInPlace(LList list)
         {
             //Create pointers to track position
-            Node current = list.Head, prev = null, next = null;
-
             list.Current = list.Head;
+            Node prev = null, next = null;
+
             while(list.Current != null)
             {
                 //Get next link
@@ -66,7 +74,7 @@ namespace LinkedListReverse
 
                 //Advance pointers
                 prev = list.Current;
-                list.Current = list.Current.Next;
+                list.Current = next;
             }
             list.Head = prev;
         }
