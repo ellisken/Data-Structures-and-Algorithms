@@ -37,6 +37,5 @@ namespace StackAndQueue.Classes
             //Sets new node to Top
             Top = node;
         }
-
     }
 }
