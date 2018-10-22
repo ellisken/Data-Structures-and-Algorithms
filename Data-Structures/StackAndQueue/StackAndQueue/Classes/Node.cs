@@ -4,7 +4,15 @@ using System.Text;
 
 namespace StackAndQueue.Classes
 {
-    class Node
+    public class Node
     {
+        public int Value { get; set; }
+        public Node Next { get; set; }
+
+        //Constructor requires value for a node
+        public Node(object value)
+        {
+            Value = value;
+        }
     }
 }
