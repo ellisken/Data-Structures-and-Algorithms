@@ -14,4 +14,7 @@
 
 7. [Challenge 7: Linked List Reverse](Challenges/LinkedListReverse)
 
-4. [Implementation: Stack & Queue](Data-Structures/StackAndQueue)
+8. [Implementation: Stack & Queue](Data-Structures/StackAndQueue)
+
+9. [Challenge 11: Queue with Stacks](Challenges/QueueWithStacks)
+
