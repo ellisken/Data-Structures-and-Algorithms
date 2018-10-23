@@ -22,8 +22,9 @@ namespace StackAndQueue.Classes
         public Node Pop()
         {
             Node oldTopNode = Peek();
-            //Reset Top to second from top ode
-            Top = Top.Next;
+            //Reset Top to second from top node
+            if (Top.Next != null) Top = Top.Next;
+            else Top = null;
             //Reset old top node's next to null before returning
             oldTopNode.Next = null;
             return oldTopNode;
