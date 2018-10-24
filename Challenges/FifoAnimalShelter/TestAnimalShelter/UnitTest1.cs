@@ -32,9 +32,36 @@ namespace TestAnimalShelter
             myShelter.Enqueue(new Dog("Rex"));
             Assert.True(myShelter.Dogs.Front.Value is Dog);
         }
+
+
         //Test dequeue Cat
+        [Fact]
+        public void DequeueCat()
+        {
+            AnimalShelter myShelter = new AnimalShelter();
+            myShelter.Enqueue(new Cat("Fluffy"));
+            myShelter.Enqueue(new Cat("Felix"));
+            Assert.Equal("Fluffy", myShelter.Dequeue("cat").Name);
+        }
+
         //Test dequeue Dog
+        [Fact]
+        public void DequeueDog()
+        {
+            AnimalShelter myShelter = new AnimalShelter();
+            myShelter.Enqueue(new Dog("Rex"));
+            myShelter.Enqueue(new Dog("Rufus"));
+            Assert.Equal("Rex", myShelter.Dequeue("dog").Name);
+        }
+
         //Test dequeue other animal
+        [Fact]
+        public void DequeueAnimal()
+        {
+            AnimalShelter myShelter = new AnimalShelter();
+            myShelter.Enqueue(new Animal());
+            Assert.True(myShelter.Dequeue("other") is Animal);
+        }
 
     }
 }
