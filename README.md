@@ -6,15 +6,17 @@
 
 2. [Challenge 2: Binary Search](Challenges/BinarySearch)
 
-4. [Implementation: Linked List](Data-Structures/LinkedList)
+3. [Implementation: Linked List](Data-Structures/LinkedList)
 
-5. [Challenge 5: Kth from End Linked List](Challenges/LLKthFromEnd)
+4. [Challenge 5: Kth from End Linked List](Challenges/LLKthFromEnd)
 
-6. [Challenge 6: Linked List Merge](Challenges/LLMerge)
+5. [Challenge 6: Linked List Merge](Challenges/LLMerge)
 
-7. [Challenge 7: Linked List Reverse](Challenges/LinkedListReverse)
+6. [Challenge 7: Linked List Reverse](Challenges/LinkedListReverse)
 
-8. [Implementation: Stack & Queue](Data-Structures/StackAndQueue)
+7. [Implementation: Stack & Queue](Data-Structures/StackAndQueue)
 
-9. [Challenge 11: Queue with Stacks](Challenges/QueueWithStacks)
+8. [Challenge 11: Queue with Stacks](Challenges/QueueWithStacks)
+
+9. [Challenge 12: FIFO Animal Shelter](Challenges/FifoAnimalShelter)
 
