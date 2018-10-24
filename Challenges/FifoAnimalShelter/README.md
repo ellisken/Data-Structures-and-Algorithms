@@ -11,7 +11,7 @@ queue is empty.
 
 * Dequeue()
   Time Complexity = O(1)
-  Space Complexity = O(n): where n is the total number of animals
+  Space Complexity = O(1)
 * Enqueue()
   Time Complexity = O(1): enqueueing an element to a queue is O(1)
   Space Complexity = O(1)
