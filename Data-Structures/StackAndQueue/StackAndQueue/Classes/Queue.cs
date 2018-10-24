@@ -24,8 +24,17 @@ namespace StackAndQueue.Classes
         //Enqueue adds a node to the rear of the queue
         public void Enqueue(Node node)
         {
-            Rear.Next = node; //Set new node to Rear.Next
-            Rear = node; //New rear is the new node
+            //Handle case where queue has been instantiated with null
+            if(Rear == null && Front == null)
+            {
+                Front = node;
+                Rear = Front;
+            }
+            else
+            {
+                Rear.Next = node; //Set new node to Rear.Next
+                Rear = node; //New rear is the new node
+            }
         }
 
         //Dequeue removes the front node and returns it

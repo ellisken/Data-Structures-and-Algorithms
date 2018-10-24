@@ -35,6 +35,14 @@ namespace TestStackAndQueue
 
         //Enqueue a node into your queue
         [Fact]
+        public void EnqueueToNull()
+        {
+            Queue q = new Queue(null);
+            q.Enqueue(new Node(1));
+            Assert.True((int)q.Front.Value == 1 && (int)q.Rear.Value == 1);
+        }
+
+        [Fact]
         public void EnqueueANode()
         {
             Queue q = new Queue(new Node(1));
