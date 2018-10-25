@@ -8,13 +8,27 @@ namespace MultiBracketValidation
         static void Main(string[] args)
         {
             Console.WriteLine("Multi-bracket Validation");
+            string checkString = "y";
+            while (checkString == "y")
+            {
+                Console.WriteLine("Please enter a string to validate:");
+                string input = Console.ReadLine();
+                bool result = MultiBracketValidation(input);
+                if (result) Console.WriteLine("\nThe string you entered has balanced brackets.");
+                else Console.WriteLine("\nThe string you entered does not have balanced brackets.");
+                Console.WriteLine("\n\nWould you like to validate another string? (y/n):");
+                checkString = Console.ReadLine();
+                Console.WriteLine();
+            }
+            Console.WriteLine("Goodbye!");
         }
 
         /// <summary>
         /// Determines whether an input string has balanced brackets
         /// </summary>
         /// <param name="input">String to test for balanced brackets</param>
-        /// <returns>True if balanced, else False. Returns true for empty strings.</returns>
+        /// <returns>True if balanced, else False. Returns true for empty strings or strings
+        /// with zero brackets.</returns>
         public static bool MultiBracketValidation(string input)
         {
             //Container to store open brackets

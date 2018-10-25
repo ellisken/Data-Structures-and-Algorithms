@@ -45,6 +45,14 @@ namespace TestBracketValidation
             string testString = "";
             Assert.True(Program.MultiBracketValidation(testString));
         }
+
+        //Test string with no brackets
+        [Fact]
+        public void TestNoBrackets()
+        {
+            string testString = "abc";
+            Assert.True(Program.MultiBracketValidation(testString));
+        }
     }
 
 }
