@@ -11,20 +11,21 @@ namespace Tree.Classes
         /// </summary>
         /// <param name="root">The BST's root</param>
         /// <param name="value">Value to be inserted</param>
-        public void Add(Node root, int value)
-        {
+        public Node Add(Node root, int value)
+        { 
             //Base case, the tree is empty or we've reached an empty leaf
             if (root == null)
             {
-                root.Value = value;
-                return;
+                root = new Node(value);
+                return root;
             }
             //If not empty, compare new value to root
             if(value < root.Value)
             {
-                Add(root.Left, value);
+                root.Left = Add(root.Left, value);
             }
-            else Add(root.Right, value);
+            else root.Right = Add(root.Right, value);
+            return root;
         }
 
         /// <summary>
