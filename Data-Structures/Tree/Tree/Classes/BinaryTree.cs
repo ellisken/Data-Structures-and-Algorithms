@@ -25,6 +25,11 @@ namespace Tree.Classes
             Root = new Node(value);
         }
 
+        /// <summary>
+        /// Returns a list of values in pre-order for a binary tree
+        /// </summary>
+        /// <param name="root">The binary tree's root</param>
+        /// <param name="valuesInPreOrder">An empty list to add values to</param>
         public void PreOrder(Node root, List<int> valuesInPreOrder)
         {
             //Base case: if node is null, return
@@ -35,6 +40,11 @@ namespace Tree.Classes
             PreOrder(root.Right, valuesInPreOrder);
         }
 
+        /// <summary>
+        /// Returns a list of values in order for a binary tree
+        /// </summary>
+        /// <param name="root">The binary tree's root</param>
+        /// <param name="valuesInOrder">An empty list to add values to</param>
         public void InOrder(Node root, List<int> valuesInOrder)
         {
             if (root == null) return;
@@ -43,6 +53,12 @@ namespace Tree.Classes
             InOrder(root.Right, valuesInOrder);
         }
 
+
+        /// <summary>
+        /// Returns a list of values in post-order for a binary tree
+        /// </summary>
+        /// <param name="root">The binary tree's root</param>
+        /// <param name="valuesInPostOrder">An empty list to add values to</param>
         public void PostOrder(Node root, List<int> valuesInPostOrder)
         {
             if (root == null) return;
