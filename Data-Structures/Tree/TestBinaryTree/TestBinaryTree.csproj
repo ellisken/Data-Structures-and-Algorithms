@@ -12,14 +12,4 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\FifoAnimalShelter\FifoAnimalShelter.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="StackAndQueue">
-      <HintPath>..\..\..\Data-Structures\StackAndQueue\StackAndQueue\bin\Release\netcoreapp2.1\StackAndQueue.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>
