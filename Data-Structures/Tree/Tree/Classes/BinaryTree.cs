@@ -42,5 +42,13 @@ namespace Tree.Classes
             valuesInOrder.Add(root.Value);
             InOrder(root.Right, valuesInOrder);
         }
+
+        public void PostOrder(Node root, List<int> valuesInPostOrder)
+        {
+            if (root == null) return;
+            PostOrder(root.Left, valuesInPostOrder);
+            PostOrder(root.Right, valuesInPostOrder);
+            valuesInPostOrder.Add(root.Value);
+        }
     }
 }

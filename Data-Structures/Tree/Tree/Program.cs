@@ -17,14 +17,25 @@ namespace Tree
             myTree.Root.Left.Right = new Node(5);
             List<int> preOrder = new List<int>();
             List<int> inOrder = new List<int>();
+            List<int> postOrder = new List<int>();
+
+            Console.WriteLine("Pre-order DFS traversal order:");
             myTree.PreOrder(myTree.Root, preOrder);
             foreach(int val in preOrder)
             {
                 Console.Write($"{val} ");
             }
             Console.WriteLine();
+            Console.WriteLine("In-order DFS traversal order:");
             myTree.InOrder(myTree.Root, inOrder);
             foreach (int val in inOrder)
+            {
+                Console.Write($"{val} ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Post-order DFS traversal order:");
+            myTree.PostOrder(myTree.Root, postOrder);
+            foreach (int val in postOrder)
             {
                 Console.Write($"{val} ");
             }
