@@ -4,10 +4,11 @@ using System.Text;
 
 namespace Tree.Classes
 {
-    class BinarySearchTree : BinaryTree
+    public class BinarySearchTree : BinaryTree
     {
         /// <summary>
-        /// Inserts a new value into a BST in the proper place
+        /// Inserts a new value into a BST in the proper place. Must return "root"
+        /// due to no pass by ref
         /// </summary>
         /// <param name="root">The BST's root</param>
         /// <param name="value">Value to be inserted</param>
@@ -24,7 +25,7 @@ namespace Tree.Classes
             {
                 root.Left = Add(root.Left, value);
             }
-            else root.Right = Add(root.Right, value);
+            else if(value > root.Value) root.Right = Add(root.Right, value);
             return root;
         }
 
