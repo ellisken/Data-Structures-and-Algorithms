@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TestBinaryTree.Classes
+namespace Tree.Classes
 {
     public class Node
     {
