@@ -13,13 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FifoAnimalShelter\FifoAnimalShelter.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="StackAndQueue">
-      <HintPath>..\..\..\Data-Structures\StackAndQueue\StackAndQueue\bin\Release\netcoreapp2.1\StackAndQueue.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Tree\Tree.csproj" />
   </ItemGroup>
 
 </Project>
