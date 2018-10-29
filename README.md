@@ -21,3 +21,5 @@
 9. [Challenge 12: FIFO Animal Shelter](Challenges/FifoAnimalShelter)
 
 10. [Challenge 13: Multi-bracket Validation](Challenges/MultiBracketValidation)
+
+11. [Implementation: Binary Tree and Binary Search Tree](Data-Structures/Tree)
