@@ -5,9 +5,9 @@
 * Binary Search Tree implementation that supports Add() and Search(). Both Add() and Search() are implemented recursively.
 
 ## Approach and Efficiency
-Traversals: O(n) where n is the number of leaves 
-Add to a BST: O(logn)
-Search a BST: O(logn)
+Traversals: Space is O(n) since we must visit each node, Time is O(h) where h is the height of the tree 
+Add to a BST: Time is O(logn), space is O(1)
+Search a BST: Time is O(logn), space is O(1)
 
 ## API
 BinaryTree
