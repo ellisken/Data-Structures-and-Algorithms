@@ -25,3 +25,5 @@
 11. [Implementation: Binary Tree and Binary Search Tree](Data-Structures/Tree)
 
 12. [Challenge 14: FizzBuzz Tree](Challenges/FizzBuzzTree)
+
+13. [Dhallenge 17: Breadth-first Search of a Binary Tree](Challenges/BreadthFirstSearch)
