@@ -26,4 +26,4 @@
 
 12. [Challenge 14: FizzBuzz Tree](Challenges/FizzBuzzTree)
 
-13. [Dhallenge 17: Breadth-first Search of a Binary Tree](Challenges/BreadthFirstSearch)
+13. [Challenge 17: Breadth-first Search of a Binary Tree](Challenges/BreadthFirstSearch)
