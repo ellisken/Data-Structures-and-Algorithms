@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using Tree.Classes;
 
-namespace FindMaxBinaryTree
+namespace FindMaxValueBinaryTree
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Maximum value of a binary tree.");
+            Console.WriteLine("Find max value binary tree: please see test suite");
         }
+
 
         public static int FindMaxValue(BinaryTree tree)
         {

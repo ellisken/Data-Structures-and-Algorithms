@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp1\FindMaxBinaryTree.csproj" />
+    <ProjectReference Include="..\FindMaxValueBinaryTree\FindMaxValueBinaryTree.csproj" />
   </ItemGroup>
 
   <ItemGroup>

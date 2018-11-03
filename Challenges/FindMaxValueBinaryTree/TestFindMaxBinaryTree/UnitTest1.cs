@@ -1,11 +1,9 @@
 using System;
-using Xunit;
 using Tree.Classes;
-using FindMaxBinaryTree;
+using Xunit;
+using FindMaxValueBinaryTree;
 
-
-
-namespace TestMaxValueBinaryTree
+namespace TestFindMaxBinaryTree
 {
     public class UnitTest1
     {
