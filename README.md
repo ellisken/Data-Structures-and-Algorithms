@@ -28,4 +28,4 @@
 
 13. [Challenge 17: Breadth-first Search of a Binary Tree](Challenges/BreadthFirstSearch)
 
-14. [Challenge 18: Find Maximum Value in Binary Search Tree](Challenges/MaxValueBinaryTree)
+14. [Challenge 18: Find Maximum Value in Binary Tree](Challenges/FindMaxValueBinaryTree)
