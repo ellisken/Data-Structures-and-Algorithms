@@ -98,12 +98,13 @@ namespace Hashtables.Classes
         public int GetHash(string key)
         {
             int hashedKey = 0;
-            //Add key character's index+1 multiplied by the key character
+            //Add each key character's ascii value
             //to the hashedKey
             for(int i=0; i < key.Length; i++)
             {
-                hashedKey += (i + 1) * key[i];
+                hashedKey += key[i];
             }
+            //Returns the hashedKey value modded by the table's capacity
             return hashedKey % Capacity;
         }
     }
