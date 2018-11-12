@@ -17,10 +17,16 @@ namespace Hashtables.Classes
             Table = new Node[capacity];
         }
 
+        /// <summary>
+        /// Adds a given key:value pair to the hashtable. If the key already exists,
+        /// that keys value is simply updated.
+        /// </summary>
+        /// <param name="key">Key to add/update</param>
+        /// <param name="value">Associated value</param>
         public void Add(string key, object value)
         {
             //Get the key's hash
-            int keyHash = GetHash(key) % Capacity;
+            int keyHash = GetHash(key);
             //Search the table to see if the key already exists
             Node current = Table[keyHash];
             while(current != null)
@@ -40,10 +46,16 @@ namespace Hashtables.Classes
             Count++;
         }
 
+        /// <summary>
+        /// Determines whether a given key exists in the hashtable. If so, returns
+        /// that key's value
+        /// </summary>
+        /// <param name="key">Key to search for</param>
+        /// <returns>The key's value if the key exists, else returns null</returns>
         public object Find(string key)
         {
             //Get the hash of the key
-            int keyHash = GetHash(key) % Capacity;
+            int keyHash = GetHash(key);
             //Traverse the bucket to find the key
             Node current = Table[keyHash];
             while(current != null)
@@ -59,10 +71,15 @@ namespace Hashtables.Classes
             return null;
         }
 
+        /// <summary>
+        /// Determines whether a key exists in the hashtable
+        /// </summary>
+        /// <param name="key">Key to look for</param>
+        /// <returns>True if the key is in the table, else returns false</returns>
         public bool Contains(string key)
         {        
             //Get the hash of the key
-            int keyHash = GetHash(key) % Capacity;
+            int keyHash = GetHash(key);
             //Traverse the bucket to find the key
             Node current = Table[keyHash];
             while (current != null)
@@ -87,7 +104,7 @@ namespace Hashtables.Classes
             {
                 hashedKey += (i + 1) * key[i];
             }
-            return hashedKey;
+            return hashedKey % Capacity;
         }
     }
 }
