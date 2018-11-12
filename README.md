@@ -29,3 +29,5 @@
 13. [Challenge 17: Breadth-first Search of a Binary Tree](Challenges/BreadthFirstSearch)
 
 14. [Challenge 18: Find Maximum Value in Binary Tree](Challenges/FindMaxValueBinaryTree)
+
+15. [Implementation: Hashtable](Data-Structures/Hashtables)
