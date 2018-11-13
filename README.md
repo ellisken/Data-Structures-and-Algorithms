@@ -31,3 +31,5 @@
 14. [Challenge 18: Find Maximum Value in Binary Tree](Challenges/FindMaxValueBinaryTree)
 
 15. [Implementation: Hashtable](Data-Structures/Hashtables)
+
+16. [Challenge 27: Tree Intersection](Challenges/TreeIntersection)
