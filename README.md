@@ -33,3 +33,5 @@
 15. [Implementation: Hashtable](Data-Structures/Hashtables)
 
 16. [Challenge 27: Tree Intersection](Challenges/TreeIntersection)
+
+17. [Challenge 28: Repeated Word](Challenges/RepeatedWord)
