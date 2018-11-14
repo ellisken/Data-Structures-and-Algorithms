@@ -15,6 +15,12 @@ namespace RepeatedWord
             Console.WriteLine($"{RepeatedWord(book)}");
         }
 
+        /// <summary>
+        /// Determines if ther are any duplicate words. If duplicates exist, the 
+        /// method returns the first duplicate word.
+        /// </summary>
+        /// <param name="book">The text to check</param>
+        /// <returns>The first repeated word, else "No Duplicates"</returns>
         public static string RepeatedWord(string book)
         {
             HashTable words = new HashTable(100);
