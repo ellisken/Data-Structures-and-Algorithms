@@ -6,7 +6,15 @@ namespace InsertionSort
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Insertion Sort:");
+            Console.WriteLine("Unsorted array input:");
+            int[] myArray = { 5, 19, 2, 6, 21, 90, 1};
+            Console.WriteLine($"{string.Join(",", myArray)}");
+            Console.WriteLine();
+            Console.WriteLine("Sorting...");
+            Console.WriteLine("Sort array input:");
+            InsertionSort(myArray);
+            Console.WriteLine($"{string.Join(", ", myArray)}");
         }
 
         static void InsertionSort(int[] input)
