@@ -35,3 +35,5 @@
 16. [Challenge 27: Tree Intersection](Challenges/TreeIntersection)
 
 17. [Challenge 28: Repeated Word](Challenges/RepeatedWord)
+
+18. [Challenge: Implement Insertion Sort](Sorting_Algorithms/InsertionSort)
