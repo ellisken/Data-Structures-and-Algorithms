@@ -37,3 +37,5 @@
 17. [Challenge 28: Repeated Word](Challenges/RepeatedWord)
 
 18. [Challenge: Implement Insertion Sort](Sorting_Algorithms/InsertionSort)
+
+19. [Challenge: Implement Quicksort](Sorting_Algorithms/QuickSort)
