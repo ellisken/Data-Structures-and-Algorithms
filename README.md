@@ -39,3 +39,5 @@
 18. [Challenge: Implement Insertion Sort](Sorting_Algorithms/InsertionSort)
 
 19. [Challenge: Implement Quicksort](Sorting_Algorithms/QuickSort)
+
+20. [Challenge: Implement Mergesort](Sorting_Algorithms/MergeSort)
