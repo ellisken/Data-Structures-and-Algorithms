@@ -7,6 +7,12 @@ namespace MergeSort
         static void Main(string[] args)
         {
             Console.WriteLine("Merge sort:");
+            int[] myArray = { 0, 3, -1, 49, 21, -5, 30, 0, 17, 5 };
+            Console.WriteLine($"Original Array: {string.Join(",", myArray)}");
+            Console.WriteLine();
+            Console.WriteLine("Calling merge sort...");
+            MergeSort(myArray);
+            Console.WriteLine($"Sorted Array: {string.Join(",", myArray)}");
         }
 
         /// <summary>
