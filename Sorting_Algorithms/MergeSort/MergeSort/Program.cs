@@ -50,6 +50,29 @@ namespace MergeSort
             return array;
         }
 
+        static void MergeSort(int[] array)
+        {
+            //array.Length == 1 is the base case
+            if (array.Length > 1)
+            {
+                //Establish subarray sizes
+                int leftLength = array.Length / 2;
+                int rightLength = array.Length - leftLength;
 
+                //Copy first half of original array into left
+                int[] left = new int[leftLength];
+                Array.Copy(array, 0, left, 0, leftLength);
+
+                //Do the same with the right
+                int[] right = new int[rightLength];
+                Array.Copy(array, array.Length / 2, right, 0, rightLength);
+
+                //Sort left, then right, then merge
+                MergeSort(left);
+                MergeSort(right);
+                Merge(left, right, array);
+            }
+
+        }
     }
 }
