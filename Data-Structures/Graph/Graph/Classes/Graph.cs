@@ -19,6 +19,7 @@ namespace Graph.Classes
             foreach(object value in values)
             {
                 Vertices.Add(new Vertex(value));
+                VertexCount++;
             }
         }
 
@@ -38,12 +39,14 @@ namespace Graph.Classes
             {
                 v1Ref = new Vertex(v1);
                 Vertices.Add(v1Ref);
+                VertexCount++;
             }
             Vertex v2Ref = Vertices.Find(x => x.Value == v2);
             if(v2Ref == null)
             {
                 v2Ref = new Vertex(v2);
                 Vertices.Add(v2Ref);
+                VertexCount++;
             }
 
             //Add key:value pair from v1 to v2 with given weight, and vice versa
@@ -60,8 +63,33 @@ namespace Graph.Classes
             return Vertices;
         }
 
+        /// <summary>
+        /// Returns the number of vertices in the graph
+        /// </summary>
+        /// <returns>The vertex count for the graph</returns>
+        public int Size()
+        {
+            return VertexCount;
+        }
 
-
+        /// <summary>
+        /// Returns a dictionary of a vertex's neighbors where each key is another vertex,
+        /// and each value is the edge weight between the two vertices
+        /// </summary>
+        /// <param name="value">Vertex value</param>
+        /// <returns>Dictionary of neighboring vertices with edge weights as values</returns>
+        public Dictionary<Vertex, int> GetNeighbors(object value)
+        {
+            //Find the node in the list of vertices with the given value
+            Vertex vertexRef = Vertices.Find(x => x.Value == value);
+            //If the node is not in the graph, return null
+            if (vertexRef == null)
+            {
+                return null;
+            }
+            //Else, return the node's list of adjacent vertices
+            return vertexRef.AdjacentVertices;
+        }
 
     }
 } 
