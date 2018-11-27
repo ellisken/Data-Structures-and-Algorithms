@@ -29,5 +29,28 @@ namespace TestGraph
             Dictionary<Vertex, int> v2Neighbors = g.GetNeighbors(v2);
             Assert.True(v1Neighbors.ContainsValue(weight) && v2Neighbors.ContainsValue(weight));
         }
+
+        //Test GetNeighbors()
+        [Theory]
+        [InlineData(5, 1)]
+        [InlineData(-4, 10)]
+        [InlineData(100, -1)]
+        public void TestGetNeighbors(int weight1, int weight2)
+        {
+            List<object> cities = new List<object>()
+            {
+                "Seattle",
+                "LA",
+                "Denver"
+            };
+            //Set up the graph
+            UndirectedGraph g = new UndirectedGraph(cities);
+            //Add edge
+            g.AddEdge(cities[0], cities[1], weight1);
+            g.AddEdge(cities[2], cities[0], weight2);
+
+            Dictionary<Vertex, int> seattleNeighbors = g.GetNeighbors("Seattle");
+            Assert.True(seattleNeighbors.ContainsValue(weight1) && seattleNeighbors.ContainsValue(weight2));
+        }
     }
 }
