@@ -8,7 +8,7 @@ namespace Graph
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Undirected Graphs!");
             List<object> cities = new List<object>();
             cities.Add("Seattle");
             //Set up the graph
