@@ -41,3 +41,5 @@
 19. [Challenge: Implement Quicksort](Sorting_Algorithms/QuickSort)
 
 20. [Challenge: Implement Mergesort](Sorting_Algorithms/MergeSort)
+
+21. [Implementation: Graph](Data-Structures/Graph)
