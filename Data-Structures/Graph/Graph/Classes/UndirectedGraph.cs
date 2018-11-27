@@ -7,6 +7,11 @@ namespace Graph.Classes
     public class UndirectedGraph
     {
         public List<Vertex> Vertices { get; set; }
+
+        public UndirectedGraph()
+        {
+
+        }
         
         /// <summary>
         /// Creates a graph with unconnected nodes
