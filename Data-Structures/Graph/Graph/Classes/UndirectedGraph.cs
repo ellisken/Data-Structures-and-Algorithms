@@ -14,7 +14,7 @@ namespace Graph.Classes
         }
         
         /// <summary>
-        /// Creates a graph with unconnected nodes
+        /// Creates a graph with unconnected nodes. DOES NOT HANDLE DUPLICATE NODE VALUES.
         /// </summary>
         /// <param name="values">A list of values to give the graph nodes</param>
         public UndirectedGraph(List<object> values)
@@ -22,7 +22,7 @@ namespace Graph.Classes
             //For each item in the list of values, create a Vertex and add it to the Vertices list
             Vertices = new List<Vertex>();
             foreach(object value in values)
-            {
+            {  
                 Vertices.Add(new Vertex(value));
             }
         }

@@ -53,6 +53,8 @@ namespace TestGraph
             Assert.True(seattleNeighbors.ContainsValue(weight1) && seattleNeighbors.ContainsValue(weight2));
         }
 
+
+        //Test GetNodes
         [Theory]
         [InlineData("Seattle", "LA", "Denver")]
         [InlineData("Portland", "Salt Lake", "New York")]
@@ -67,6 +69,34 @@ namespace TestGraph
             List<Vertex> nodes = g.GetNodes();
 
             Assert.True(cities[0] == nodes[0].Value && cities[1] == nodes[1].Value && cities[2] == nodes[2].Value);
+        }
+
+        //Test Size
+        [Fact]
+        public void TestSize0()
+        {
+            List<object> cities = new List<object>();
+            UndirectedGraph g = new UndirectedGraph(cities);
+            Assert.Equal(0, g.Size());
+        }
+
+        [Fact]
+        public void TestSize1()
+        {
+            List<object> cities = new List<object>();
+            cities.Add("Seattle");
+            UndirectedGraph g = new UndirectedGraph(cities);
+            Assert.Equal(1, g.Size());
+        }
+
+        [Fact]
+        public void TestSize2()
+        {
+            List<object> cities = new List<object>();
+            cities.Add("Seattle");
+            cities.Add("San Francisco");
+            UndirectedGraph g = new UndirectedGraph(cities);
+            Assert.Equal(2, g.Size());
         }
     }
 }
