@@ -43,3 +43,5 @@
 20. [Challenge: Implement Mergesort](Sorting_Algorithms/MergeSort)
 
 21. [Implementation: Graph](Data-Structures/Graph)
+
+22. [Challenge 38: Get Edges](Challenges/GetEdges)
