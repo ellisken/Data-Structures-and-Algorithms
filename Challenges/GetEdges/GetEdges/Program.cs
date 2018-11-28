@@ -36,7 +36,7 @@ namespace GetEdges
             Console.WriteLine($"Result: {result.Item1}, ${result.Item2}");
         }
 
-        static Tuple<bool, int> GetEdge(UndirectedGraph g, string[] cities)
+        public static Tuple<bool, int> GetEdge(UndirectedGraph g, string[] cities)
         {
             int totalCost = 0;
             //Create default answer tuple
