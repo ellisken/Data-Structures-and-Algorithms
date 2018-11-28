@@ -15,17 +15,23 @@ namespace GetEdges
         {
             int totalCost = 0;
             //Create default answer tuple
-            Tuple<bool, int> answer = new Tuple<bool, int>( false, 0 );
+            Tuple<bool, int> noTrip = new Tuple<bool, int>( false, 0 );
 
             for(int i=0; i < cities.Length - 1; i++)
             {
                 //Get neighbors
-                Dictionary<Vertex, int> neighbors = g.GetNeighbors(cities[i]);
+                Dictionary<string, int> neighbors = g.GetNeighbors(cities[i]);
                 if (neighbors.ContainsKey(cities[i + 1]))
                 {
-
+                    totalCost += neighbors[cities[i + 1]];
+                }
+                else
+                {
+                    return noTrip;
                 }
             }
+            Tuple<bool, int> trip = new Tuple<bool, int>(true, totalCost);
+            return trip;
         }
     }
 }
