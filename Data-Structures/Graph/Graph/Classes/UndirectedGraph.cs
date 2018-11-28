@@ -79,8 +79,8 @@ namespace Graph.Classes
         /// and each value is the edge weight between the two vertices
         /// </summary>
         /// <param name="value">Vertex value</param>
-        /// <returns>Dictionary of neighboring vertices with edge weights as values</returns>
-        public Dictionary<Vertex, int> GetNeighbors(object value)
+        /// <returns>Dictionary of neighboring vertices' values with edge weights as values</returns>
+        public Dictionary<string, int> GetNeighbors(object value)
         {
             //Find the node in the list of vertices with the given value
             Vertex vertexRef = Vertices.Find(x => x.Value == value);
@@ -90,7 +90,13 @@ namespace Graph.Classes
                 return null;
             }
             //Else, return the node's list of adjacent vertices
-            return vertexRef.AdjacentVertices;
+            Dictionary<string, int> neighbors = new Dictionary<string, int>();
+            foreach(var entry in vertexRef.AdjacentVertices)
+            {
+                var key = entry.Key;
+                neighbors.Add((string)key.Value, vertexRef.AdjacentVertices[key]);
+            }
+            return neighbors;
         }
 
     }

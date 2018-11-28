@@ -25,8 +25,8 @@ namespace TestGraph
             //Add edge
             g.AddEdge(v1, v2, weight);
             //Assert success - that v1 is in the adjacency list of v2 and vice versa
-            Dictionary<Vertex, int> v1Neighbors = g.GetNeighbors(v1);
-            Dictionary<Vertex, int> v2Neighbors = g.GetNeighbors(v2);
+            Dictionary<string, int> v1Neighbors = g.GetNeighbors(v1);
+            Dictionary<string, int> v2Neighbors = g.GetNeighbors(v2);
             Assert.True(v1Neighbors.ContainsValue(weight) && v2Neighbors.ContainsValue(weight));
         }
 
@@ -49,7 +49,7 @@ namespace TestGraph
             g.AddEdge(cities[0], cities[1], weight1);
             g.AddEdge(cities[2], cities[0], weight2);
 
-            Dictionary<Vertex, int> seattleNeighbors = g.GetNeighbors("Seattle");
+            Dictionary<string, int> seattleNeighbors = g.GetNeighbors("Seattle");
             Assert.True(seattleNeighbors.ContainsValue(weight1) && seattleNeighbors.ContainsValue(weight2));
         }
 
