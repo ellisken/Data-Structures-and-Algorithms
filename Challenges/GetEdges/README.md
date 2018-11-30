@@ -1,4 +1,4 @@
-# Repeated word
+# Get Edges
 
 ## Challenge
 Write a function based on the specifications above, which takes in a graph, and an array of city names. 
