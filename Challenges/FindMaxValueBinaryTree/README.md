@@ -9,7 +9,7 @@ Write a method that takes a binary tree as input and returns the maximum value i
 
 ## Notes
 The implemented solution does not match the whiteboard solution. The whiteboard solution below shows a method that
-recursive compares a root node to its left and right node values. The iterative version implemented uses a queue to 
+recursively compares a root node to its left and right node values. The iterative version implemented uses a queue to 
 process the nodes. One is not necessarily better than the other. Consider a binary tree where each node has only one child, and every 
 child in the tree is a left child. If the tree has more than one (root) node, then the height will always be greater than the width.
 
