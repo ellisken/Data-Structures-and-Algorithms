@@ -1,5 +1,5 @@
 # Data Structures and Algorithms
-A collection of DS and algorithm implementations in C#.
+A collection of DS and algorithm implementations in C#. All sections documented and implemented by me (ellisken).
 
 ## Table of Contents
 
