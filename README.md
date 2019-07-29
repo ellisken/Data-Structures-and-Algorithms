@@ -1,4 +1,5 @@
 # Data Structures and Algorithms
+A collection of DS and algorithm implementations in C#.
 
 ## Table of Contents
 
